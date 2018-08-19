@@ -7,6 +7,14 @@
     font-weight: 500;
   }
 
+  &--white {
+    color: $mainPurple;
+
+    @mixin atMedium {
+      color: #fff;
+    }
+  }
+
   &__icon {
     margin-right: .5rem;
     transform:  translateY(20%);
