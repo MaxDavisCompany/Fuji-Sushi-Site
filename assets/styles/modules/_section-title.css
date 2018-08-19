@@ -9,6 +9,8 @@
 
   &--white {
     color: $mainPurple;
+    position: relative;
+    bottom: 35px;
 
     @mixin atMedium {
       color: #fff;
