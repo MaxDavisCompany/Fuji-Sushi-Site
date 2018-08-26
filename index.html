@@ -6,7 +6,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title> Fuji Sushi </title>
   <link rel="stylesheet" href="temp/styles/styles.css">
-
+  <script src="/temp/scripts/Vendor.js">
+   </script>
 
 
 
@@ -16,17 +17,18 @@
     <div class="wrapper">
 
       <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
       </div>
 
       <div class="site-header__menu-content">
 <div class="site-header__btn-container">
-<a href="#" class="btn">Let's Eat!</a>
+<a href="#" class="btn btn--pink open-modal">Let's Eat!</a>
 </div>
 <nav class="primary-nav primary-nav--pull-right">
   <ul>
-    <li><a href="#our-beginning">Our Beginning</a></li>
-    <li><a href="#our-features">Our Features</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+    <li><a href="#our-features" id="features-link">Our Features</a></li>
+    <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
   </ul>
 </nav>
 </div>
@@ -44,15 +46,15 @@
 <div class="large-fuji__text-content">
   <div class="wrapper">
   <h1 class="large-fuji__title">Fuji Sushi</h1>
-  <h2 class="large-fuji__subtitle"> Always fresh. Usually raw.</h2>
+  <h2 class="large-fuji__subtitle"> Where the sushi's always Fuji.</h2>
   <p class="large-fuji__description"> We create the most delicious sushi on
      planet earth</p>
-     <p><a href="#" class="btn btn--pink btn--large">Make a Reservation</a></p>
+     <p><a href="#" class="btn btn--pink btn--large open-modal">Make a Reservation</a></p>
   </div>
 </div>
 </div>
 
-     <div id="our-beginning" class="page-section">
+     <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
        <div class="wrapper">
        <h2 class="headline headline--centered headline--b-margin-small"> Every piece of sushi is completely
           <strong>custom</strong> to your taste.</h2>
@@ -60,15 +62,15 @@
          headline--b-margin-large">Each bite takes you to a new <strong>universe</strong>.</h3>
 
 <div class="wrapper wrapper--medium wrapper--b-margin">
-<img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/sushi-pieces--low-res.jpg 565w,
+<img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/sushi-pieces--low-res.jpg 565w,
  assets/images/sushi-pieces.jpg 976w" alt="pieces of sushi">
  </div>
 
 <div class="row row--gutters">
   <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
 <picture>
-  <source sizes="404px" srcset="assets/images/salmon-piece--portrait.jpg"   media="(min-width:800px)">
-  <img srcset="assets/images/salmon-roe.jpg 800w" alt="salmon roe">
+  <source sizes="404px" data-srcset="assets/images/salmon-piece--portrait.jpg"   media="(min-width:800px)">
+  <img class="lazyload" data-srcset="assets/images/salmon-roe.jpg 800w" alt="salmon roe">
 </picture>
 </div>
 
@@ -110,7 +112,7 @@
 
 
 
-<div id="our-features" class="page-section page-section--purple">
+<div id="our-features" class="page-section page-section--purple" data-matching-link="#features-link">
   <div class="wrapper">
 
 <h2 class="section-title"><img class="section-title__icon" src="./assets/images/icons/icon-header.png" "height=120px width=120px">Our <strong>Features</strong></h2>
@@ -126,7 +128,7 @@
      about to rain in the next 20 minutes around your current
      location. A good rain can be refreshing, but sometimes you
      just want to stay dry.</p>
-</div>
+   </div>
 
 <div class="feature-item">
    <img class="feature-item__icon" src="./assets/images/icons/icon-2.png" "height=120px width=120px">
@@ -135,8 +137,8 @@
       about to rain in the next 20 minutes around your current
       location. A good rain can be refreshing, but sometimes you
       just want to stay dry.</p>
-</div>
-</div>
+    </div>
+    </div>
 
 <div class="row__medium-6">
 <div class="feature-item">
@@ -148,6 +150,7 @@
        location. A good rain can be refreshing, but sometimes you
        just want to stay dry.</p>
      </div>
+   </div>
 
      <div class="feature-item">
       <img class="feature-item__icon" src="./assets/images/icons/icon-4-redo.png" "height=120px width=120px">
@@ -163,7 +166,7 @@
 </div>
 
 <div id="testimonials" class="page-section page-section--testimonials
-page-section--no-b-padding-until-large">
+page-section--no-b-padding-until-large lazyload" data-matching-link="#testimonials-link">
  <div class="wrapper wrapper--no-padding-until-large">
      <h2 class="section-title section-title--white">Meet Our Team</h2>
 
@@ -172,7 +175,7 @@ page-section--no-b-padding-until-large">
    <div class="row__large-4">
      <div class="testimonial">
        <div class="testimonial__photo">
-     <img sizes="160px" srcset="assets/images/steve.jpg 160w" "height=200px width=200px" alt="steve">
+     <img class="lazyload" sizes="160px" data-srcset="assets/images/steve.jpg 160w" "height=200px width=200px" alt="steve">
       </div>
      <h3 class="testimonial__title">Yujo Yacachimi</h3>
      <h4 class="testimonial__subtitle">Head Chef</h4>
@@ -187,7 +190,7 @@ page-section--no-b-padding-until-large">
    <div class="row__large-4">
      <div class="testimonial">
        <div class="testimonial__photo">
-     <img sizes="160px" srcset="assets/images/mike.jpg 160w" "height=200px width=200px" alt="mike">
+     <img class="lazyload" sizes="160px" data-srcset="assets/images/mike.jpg 160w" "height=200px width=200px" alt="mike">
        </div>
      <h3 class="testimonial__title">Shino Shabasudo </h3>
      <h4 class="testimonial__subtitle">Sous Chef</h4>
@@ -202,7 +205,7 @@ page-section--no-b-padding-until-large">
    <div class="row__large-4">
      <div class="testimonial testimonial--last">
        <div class="testimonial__photo">
-     <img sizes="160px" srcset="assets/images/jim.jpg 160w" "height=200px width=200px" alt="jim">
+     <img class="lazyload" sizes="160px" data-srcset="assets/images/jim.jpg 160w" "height=200px width=200px" alt="jim">
       </div>
      <h3 class="testimonial__title">Tosen Tosanawa </h3>
      <h4 class="testimonial__subtitle">Bus Boy</h4>
@@ -222,10 +225,23 @@ page-section--no-b-padding-until-large">
 <footer class="site-footer">
 <div class="wrapper wrapper--footer">
   <p><span class="site-footer__text">Copyright &copy; 2018 Jiro Sushi. All rights reserved.</span>
-    <a href="#"class="btn btn--pink">Make a Reservation</a></p>
+    <a href="#"class="btn btn--pink open-modal">Make a Reservation</a></p>
 </div>
 </footer>
 
+<div class="modal">
+<div class="modal__inner">
+  <h2 class="section-title section-title--purple section-title--less-margin">
+    Get in <strong> Touch </strong> </h2>
+<div class="wrapper wrapper--narrow">
+<p class="modal__description"> We will have an online order system in place soon.
+ Until then, connect with us on any of the platforms below!</p>
+</div>
+</div>
+<div class="modal__close">X</div>
+</div>
+</div>
+<script src="/temp/scripts/App.js"></script>
 
 </body>
 </html>
