@@ -55,6 +55,11 @@
      width: 50%;
    }
 
+   &__adjust-top {
+    position: relative;
+    bottom: 20px;
+   }
+
    &__medium-8 {
      float: left;
      width: 66%;

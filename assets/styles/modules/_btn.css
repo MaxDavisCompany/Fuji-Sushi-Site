@@ -6,13 +6,13 @@
   display: inline-block;
 
   &--pink {
-    background-color: rgba($mainPink, .5);
+    background-color: rgba($mainPink, .7);
     font-weight: 400;
     color: #fff;
     text-decoration: none;
     padding: .75rem 1.2rem;
     display: inline-block;
-
+    position: relative;
   }
 
   &--large {
@@ -22,4 +22,5 @@
       font-size: 1.25rem;
     }
   }
-}
+
+  }

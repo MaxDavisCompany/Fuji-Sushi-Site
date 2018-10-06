@@ -472,7 +472,6 @@ a {
 .large-fuji {
   border-bottom: 10px solid #5b5f9f;
   position: relative;
-
 }
 
 .large-fuji__image {
@@ -510,9 +509,23 @@ a {
 @media (min-width: 530px) {
 
 .large-fuji__title {
-        font-size: 4.8rem;
+        font-size: 3rem;
         -webkit-transform: translateY(0);
                 transform: translateY(0)
+  }
+  }
+
+@media (min-width: 800px) {
+
+.large-fuji__title {
+        font-size: 3.8rem
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.large-fuji__title {
+        font-size: 4.8rem
   }
   }
 
@@ -528,9 +541,23 @@ a {
 @media (min-width: 530px) {
 
 .large-fuji__subtitle {
-      font-size: 2.9rem;
+      font-size: 2rem;
       -webkit-transform: translateY(0);
               transform: translateY(0)
+  }
+  }
+
+@media (min-width: 800px) {
+
+.large-fuji__subtitle {
+        font-size: 2.4rem
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.large-fuji__subtitle {
+      font-size: 2.9rem
   }
   }
 
@@ -553,22 +580,36 @@ a {
   }
   }
 
+.large-fuji a {
+  display: none;
+
+}
+
+@media (min-width: 348px) {
+
+.large-fuji a {
+  display: inline-block
+
+}
+}
+
 .btn {
   background-color: #5b5f9f;
   color: #fff;
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
-}
+
+  }
 
 .btn--pink {
-    background-color: rgba(237,162,169, .5);
+    background-color: rgba(237,162,169, .7);
     font-weight: 400;
     color: #fff;
     text-decoration: none;
     padding: .75rem 1.2rem;
     display: inline-block;
-
+    position: relative;
   }
 
 .btn--large {
@@ -804,6 +845,11 @@ a {
      width: 50%;
    }
 
+   .row__adjust-top {
+    position: relative;
+    bottom: 20px;
+   }
+
    .row__medium-8 {
      float: left;
      width: 66%;
@@ -964,21 +1010,25 @@ a {
 
 .feature-item__title {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: .7em;
-    margin-bottom: .8rem;
+    margin-bottom: 1.4rem;
     text-align: center;
-
   }
 
 @media (min-width: 530px) {
 
 .feature-item__title {
-      margin-top: 1em;
+      margin-top: 1rem;
       font-size: 1.875rem;
-      text-align: left
-
+      text-align: center;
+      font-weight: 300
   }
+  }
+
+.feature-item p {
+    text-align: center;
+    font-size: 1.3rem;
   }
 
 .testimonial {
